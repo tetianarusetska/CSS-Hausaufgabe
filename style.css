@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: "Melodrama";
+    src: url("./fonts/Melodrama_Complete-2/Fonts/WEB/fonts/Melodrama-Light.ttf");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Melodrama";
+    src: url("./fonts/Melodrama_Complete-2/Fonts/WEB/fonts/Melodrama-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Melodrama";
+    src: url("./fonts/Melodrama_Complete-2/Fonts/WEB/fonts/Melodrama-Medium.ttf");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Melodrama";
+    src: url("./fonts/Melodrama_Complete-2/Fonts/WEB/fonts/Melodrama-Semibold.ttf");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Melodrama";
+    src: url("./fonts/Melodrama_Complete-2/Fonts/WEB/fonts/Melodrama-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+:root {
+    --decoration-font: "Melodrama", sans-serif;
+    --main-font: "Montserrat", sans-serif;
+    --accentColor: rgb(35, 35, 255);
+    --primaryColor: rgb(0, 0, 0);
+    --secondaryColor: rgb(255, 255, 255);
+}
+
+.act1, .act2, .act3, .act4,
+.act5, .act6, .act7, .act8, 
+.act9, .act10 {
+    width: 300px;
+    height: fit-content;
+    background-color: rgb(191, 201, 247);
+    border: 3px solid var(--accentColor);
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 4px;
+}
+
+.act1 { display: flex; }
+.act2, .act3, .act4, .act5, .act6, .act7, .act8, .act9, .act10 { display: none; }
+
+.name {
+    font-family: var(--decoration-font);
+    font-weight: 500;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.number {
+    font-family: var(--decoration-font);
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.actName {
+    background-color: rgb(255, 230, 255);
+    width: fit-content;
+}
+
+.text {
+    font-size: 15px;
+}
+
+.pixel {
+    width: 4px;
+    height: 4px;
+    background-color: var(--accentColor);
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--accentColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lineRow {
+    display: flex;
+    align-items: center;   
+    gap: 0;                
+}
+
+.line {
+  width: 200px;                
+  height: 0;                    
+  border-top: 3px solid var(--accentColor);
+}
+
+@media (min-width: 400px) { .act1 { display: none; } .act2 { display: flex; } }
+@media (min-width: 500px) { .act2 { display: none; } .act3 { display: flex; } }
+@media (min-width: 600px) { .act3 { display: none; } .act4 { display: flex; } }
+@media (min-width: 700px) { .act4 { display: none; } .act5 { display: flex; } }
+@media (min-width: 800px) { .act5 { display: none; } .act6 { display: flex; } }
+@media (min-width: 900px) { .act6 { display: none; } .act7 { display: flex; } }
+@media (min-width: 1000px) { .act7 { display: none; } .act8 { display: flex; } }
+@media (min-width: 1100px) { .act8 { display: none; } .act9 { display: flex; } }
+@media (min-width: 1200px) { .act9 { display: none; } .act10 { display: flex; } }
